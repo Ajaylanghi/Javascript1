@@ -1,0 +1,302 @@
+<head>
+    <script>
+        function testJS() {
+
+            document.getElementById("hide").style.display = 'none';
+            document.getElementById("show").style.display = 'block';
+
+            var a = document.getElementById("rec1_l").value;
+            var b = document.getElementById("rec1_b").value;
+            var x = a * b;
+
+            var c = document.getElementById("rec2_l").value;
+            var d = document.getElementById("rec2_b").value;
+            var y = c * d;
+
+            var e = document.getElementById("rec3_l").value;
+            var f = document.getElementById("rec3_b").value;
+            var z = e * f;
+
+            document.getElementById("Rec1_l").value = a;
+            document.getElementById("Rec1_b").value = b;
+            document.getElementById("Rec2_l").value = c;
+            document.getElementById("Rec2_b").value = d;
+            document.getElementById("Rec3_l").value = e;
+            document.getElementById("Rec3_b").value = f;
+
+            document.getElementById("Rect1_l").innerHTML = a;
+            document.getElementById("Rect1_b").innerHTML = b;
+            document.getElementById("Rect2_l").innerHTML = c;
+            document.getElementById("Rect2_b").innerHTML = d;
+            document.getElementById("Rect3_l").innerHTML = e;
+            document.getElementById("Rect3_b").innerHTML = f;
+
+
+            document.getElementById("Rec1_a").innerHTML = x;
+            document.getElementById("Rec2_a").innerHTML = y;
+            document.getElementById("Rec3_a").innerHTML = z;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="hide">
+        <center>
+            <button onclick="testJS()">Try it</button>
+        </center>
+        <div>
+            <fieldset>
+                <legend>
+                    <b>Set 10</b>&nbsp;&nbsp;</legend>
+                <div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>A</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec1_l" name="number[20]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>B</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec1_b" name="number[19]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <span>
+                                The rectangle'...
+                                <br>
+                                <br>The rectangle'...
+                            </span>
+                        </div>
+                        <div>
+                            <div>
+                                The rectangle's area is {=4.9*5.8} cm2
+                                <br>The rectangle's area is 28.42 cm2
+                                <br>The rectangle's area is {=2*4.9+2*5.8} cm2
+                                <br>The rectangle's area is 21.4 cm2
+                                <br>
+                            </div>
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <b>Set 8</b>&nbsp;&nbsp;</legend>
+                <div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>A</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec2_l" name="number[16]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>B</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec2_b" name="number[15]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <span>
+                                The rectangle'...
+                                <br>
+                                <br>The rectangle'...
+                            </span>
+                        </div>
+                        <div>
+                            <div>
+                                The rectangle's area is {=8.6*4.1} cm2
+                                <br>The rectangle's area is 35.26 cm2
+                                <br>The rectangle's area is {=2*8.6+2*4.1} cm2
+                                <br>The rectangle's area is 25.4 cm2
+                                <br>
+                            </div>
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <b>Set 7</b>&nbsp;&nbsp;</legend>
+                <div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>A</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec3_l" name="number[14]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <label>
+                                Wild card {
+                                <strong>B</strong>}
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" id="rec3_b" name="number[13]" size="">
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                            </span>
+                            <span>
+                                The rectangle'...
+                                <br>
+                                <br>The rectangle'...
+                            </span>
+                        </div>
+                        <div>
+                            <div>
+                                The rectangle's area is {=7.1*8.3} cm2
+                                <br>The rectangle's area is 58.93 cm2
+                                <br>The rectangle's area is {=2*7.1+2*8.3} cm2
+                                <br>The rectangle's area is 30.8 cm2
+                                <br>
+                            </div>
+                            <div style="display:none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <div id="show" style="display:none">
+        <div>
+            <div>
+                <h2>Bordered Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Set no</th>
+                            <th>Wild card {A} </th>
+                            <th>Wild card {B} </th>
+                            <th>The rectangle'... </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Set 10</td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec1_l" size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec1_b"size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>The rectangle's area is {=<span id="Rect1_l"></span>*<span id="Rect1_b"></span>} cm2 The rectangle's area is <span id="Rec1_a"></span> cm2</td>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Set 8</td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec2_l" size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec2_b" size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td> The rectangle's area is {=<span id="Rect2_l"></span>*<span id="Rect2_b"></span>} cm2 The rectangle's area is <span id="Rec2_a"></span> cm2</td>
+                        </tr>
+                        <tr>
+                            <td>set 7</td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec3_l" size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" id="Rec3_b" size="">
+                                    <div style="display:none">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>The rectangle's area is {=<span id="Rect3_l"></span>*<span id="Rect3_b"></span>} cm2 The rectangle's area is <span id="Rec3_a"></span> cm2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
